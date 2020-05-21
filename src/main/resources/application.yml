@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        output-channel: # 채널 이름
+          destination: topic-name # 토픽 이름
+        input-channel: # 채널 이름
+          destination: topic-name # 토픽 이름
+      kafka:
+        binder:
+          brokers:
+          - localhost:9092
